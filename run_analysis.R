@@ -26,7 +26,7 @@ names(X) <- tolower(names(X))
 tidy <- cbind(subject, Y, X)
 write.table(tidy, "TidyDatav1.txt")
 
-## Calculating the Aggregate Mean##
+## Calculating the Average of Each variable##
 agg_mean <-aggregate(tidy[,-2], by=list(tidy$Activity,tidy$Volunteer),FUN=mean, na.rm=TRUE)
 agg_mean<-agg_mean[-2]
 agg_mean<-agg_mean[c(2,1,3:68)]
