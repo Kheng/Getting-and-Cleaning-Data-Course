@@ -38,6 +38,7 @@ For each record in the dataset it is provided:
 
 Data Structure:
 ================================
+```
 'data.frame':	10299 obs. of  68 variables:
  $ Volunteer                : int  1 1 1 1 1 1 1 1 1 1 ...
  $ Activity                 : Factor w/ 6 levels "Walking","Walking Upstairs",..: 5 5 5 5 5 5 5 5 5 5 ...
@@ -107,15 +108,19 @@ Data Structure:
  $ fbodybodygyromag-std     : num  -0.961 -0.983 -0.986 -0.988 -0.989 ...
  $ fbodybodygyrojerkmag-mean: num  -0.992 -0.996 -0.995 -0.995 -0.995 ...
  $ fbodybodygyrojerkmag-std : num  -0.991 -0.996 -0.995 -0.995 -0.995 ...
+```
 
 Data Dim:
 ================================
+```
 [1] 10299    68
-
+```
 
  Summary:
 ================================
-    Volunteer                   Activity    tbodyacc-mean-x   tbodyacc-mean-y    tbodyacc-mean-z   
+
+```
+   Volunteer                   Activity    tbodyacc-mean-x   tbodyacc-mean-y    tbodyacc-mean-z   
  Min.   : 1.00   Walking           :1722   Min.   :-1.0000   Min.   :-1.00000   Min.   :-1.00000  
  1st Qu.: 9.00   Walking Upstairs  :1544   1st Qu.: 0.2626   1st Qu.:-0.02490   1st Qu.:-0.12102  
  Median :17.00   Walking Downstairs:1406   Median : 0.2772   Median :-0.01716   Median :-0.10860  
@@ -212,4 +217,6 @@ Data Dim:
  Median :-0.8756       Median :-0.8275      Median :-0.9453           Median :-0.9382         
  Mean   :-0.6974       Mean   :-0.7000      Mean   :-0.7798           Mean   :-0.7922         
  3rd Qu.:-0.4514       3rd Qu.:-0.4713      3rd Qu.:-0.6122           3rd Qu.:-0.6437         
- Max.   : 1.0000       Max.   : 1.0000      Max.   : 1.0000           Max.   : 1.0000 
+ Max.   : 1.0000       Max.   : 1.0000      Max.   : 1.0000           Max.   : 1.0000    
+
+```
