@@ -36,11 +36,20 @@ For each record in the dataset it is provided:
 
 •	An identifier of the subject who carried out the experiment.
 
+Transformations
+================================
+•	Created the train and test datasets adding them the subject and the activity.
+•	Merged the training and the test sets to create one data set.
+•	Set the column names
+•	Extracted only the measurements on the mean and standard deviation for each measurement.
+•	Set descriptive activity names to name the activities in the data set
+•	Created the second, independent tidy data set with the average of each variable for each activity and each subject.
+
 Data Structure:
 ================================
 ```
 'data.frame':	10299 obs. of  68 variables:
- $ Volunteer                : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ Activity_ID              : int  1 1 1 1 1 1 1 1 1 1 ...
  $ Activity                 : Factor w/ 6 levels "Walking","Walking Upstairs",..: 5 5 5 5 5 5 5 5 5 5 ...
  $ tbodyacc-mean-x          : num  0.289 0.278 0.28 0.279 0.277 ...
  $ tbodyacc-mean-y          : num  -0.0203 -0.0164 -0.0195 -0.0262 -0.0166 ...
@@ -110,6 +119,16 @@ Data Structure:
  $ fbodybodygyrojerkmag-std : num  -0.991 -0.996 -0.995 -0.995 -0.995 ...
 ```
 
+Actvitiy:
+================================
+```
+•	walking
+•	walkingupstairs
+•	walkingdownstairs
+•	sitting
+•	laying
+```
+
 Data Dim:
 ================================
 ```
@@ -120,7 +139,7 @@ Data Dim:
 ================================
 
 ```
-   Volunteer                   Activity    tbodyacc-mean-x   tbodyacc-mean-y    tbodyacc-mean-z   
+  Activity_ID                  Activity    tbodyacc-mean-x   tbodyacc-mean-y    tbodyacc-mean-z   
  Min.   : 1.00   Walking           :1722   Min.   :-1.0000   Min.   :-1.00000   Min.   :-1.00000  
  1st Qu.: 9.00   Walking Upstairs  :1544   1st Qu.: 0.2626   1st Qu.:-0.02490   1st Qu.:-0.12102  
  Median :17.00   Walking Downstairs:1406   Median : 0.2772   Median :-0.01716   Median :-0.10860  
@@ -217,6 +236,6 @@ Data Dim:
  Median :-0.8756       Median :-0.8275      Median :-0.9453           Median :-0.9382         
  Mean   :-0.6974       Mean   :-0.7000      Mean   :-0.7798           Mean   :-0.7922         
  3rd Qu.:-0.4514       3rd Qu.:-0.4713      3rd Qu.:-0.6122           3rd Qu.:-0.6437         
- Max.   : 1.0000       Max.   : 1.0000      Max.   : 1.0000           Max.   : 1.0000    
+ Max.   : 1.0000       Max.   : 1.0000      Max.   : 1.0000           Max.   : 1.0000
 
 ```
